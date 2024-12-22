@@ -8,9 +8,6 @@
     body {
       margin: 0;
       padding: 0;
-      /* display: flex; */
-      /* justify-content: center; */
-      /* align-items: center; */
       height: 100vh;
       background-color: #f4f4f9;
       font-family: Arial, sans-serif;
@@ -18,7 +15,7 @@
 
     .grid-container {
       display: grid;
-      grid-template-rows: repeat(5, 1fr);
+      grid-template-rows: repeat(5, fr);
       grid-template-columns: repeat(4, 1fr);
       gap: 7px;
       width: 100vw;
@@ -27,64 +24,28 @@
 
     .grid-item {
       display: flex;
-      /* justify-content: center;
-      align-items: center; */
-      background-color: #007bff;
+      background-color: green;
       color: white;
       font-size: 4vw;
-      border-radius: 1px;
+      border-radius: 2px;
       text-align: center;
-		
     }
 
     .item-1 {
       grid-column: span 4;
-      background-color: green;
     }
 
     .item-2 {
       grid-row: span 4;
-      background-color: green;
-    }
-	      .item-3 {
-      grid-row: span 1;
-      background-color: green;
     }
 
-    .item-4 {
+    .item-4,
+    .item-5 {
       grid-column: span 2;
-      background-color: green;
     }
-
-    
-	  .item-5 {
-      grid-column: span 2;
-      background-color: green;
-    }
-
-	  .item-6{
-      grid-column: span 1;
-      background-color: green;
-    }
-
-	  .item-7 {
-      grid-column: span 1;
-      background-color: green;
-    }
-
-	  .item-8 {
-      grid-column: span 1;
-      background-color: green;
-    }
-	  .item-9 {
-      grid-column: span 1;
-      background-color: green;
-    }
-
 
     .item-10 {
       grid-column: span 3;
-      background-color: green;
     }
   </style>
 </head>
@@ -100,10 +61,6 @@
     <div class="grid-item item-8">8</div>
     <div class="grid-item item-9">9</div>
     <div class="grid-item item-10">10</div>
-
   </div>
 </body>
 </html>
-
-
-
