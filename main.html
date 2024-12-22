@@ -1,16 +1,90 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colored Grid Layout</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f9;
+      font-family: Arial, sans-serif;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      width: 90vw;
+      height: 90vh;
+    }
+
+    .grid-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #007bff;
+      color: white;
+      font-size: 4vw;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .item-1 {
+      grid-column: span 4;
+      background-color: green;
+    }
+
+    .item-2 {
+      grid-row: span 4;
+      background-color: green;
+    }
+
+    .item-4 {
+      grid-column: span 2;
+      background-color: green;
+    }
+
+    .item-5 {
+      grid-column: span 2;
+      background-color: green;
+    }
+
+    .item-10 {
+      grid-column: span 3;
+      background-color: green;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <div class="grid-container">
+    <div class="grid-item item-1">1</div>
+    <div class="grid-item item-2">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item item-4">4</div>
+    <div class="grid-item item-5">5</div>
+    <div class="grid-item">6</div>
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+    <div class="grid-item">9</div>
+    <div class="grid-item item-10">10</div>
+    <div class="grid-item">11</div>
+    <div class="grid-item">12</div>
+    <div class="grid-item">13</div>
+    <div class="grid-item">14</div>
+    <div class="grid-item">15</div>
+    <div class="grid-item">16</div>
+    <div class="grid-item">17</div>
+    <div class="grid-item">18</div>
+    <div class="grid-item">19</div>
+    <div class="grid-item">20</div>
+  </div>
 </body>
-
 </html>
+
