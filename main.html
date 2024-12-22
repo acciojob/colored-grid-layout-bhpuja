@@ -63,30 +63,30 @@
   </style>
 </head>
 <body>
-  <div class="grid-container" id="grid-container">
-    <!-- Grid items will be added dynamically -->
+  <div class="grid-container">
+    <div class="grid-item item-1">1</div>
+    <div class="grid-item item-2">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item item-4">4</div>
+    <div class="grid-item item-5">5</div>
+    <div class="grid-item">6</div>
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+    <div class="grid-item">9</div>
+    <div class="grid-item item-10">10</div>
+    <div class="grid-item">11</div>
+    <div class="grid-item">12</div>
+    <div class="grid-item">13</div>
+    <div class="grid-item">14</div>
+    <div class="grid-item">15</div>
+    <div class="grid-item">16</div>
+    <div class="grid-item">17</div>
+    <div class="grid-item">18</div>
+    <div class="grid-item">19</div>
+    <div class="grid-item">20</div>
   </div>
-
-  <script>
-    // JavaScript to generate grid items dynamically
-    const gridContainer = document.getElementById('grid-container');
-
-    for (let i = 1; i <= 20; i++) {
-      const gridItem = document.createElement('div');
-      gridItem.classList.add('grid-item');
-      gridItem.textContent = i;
-
-      // Apply special styles to specific items
-      if (i === 1) gridItem.classList.add('item-1');
-      else if (i === 2) gridItem.classList.add('item-2');
-      else if (i === 4) gridItem.classList.add('item-4');
-      else if (i === 5) gridItem.classList.add('item-5');
-      else if (i === 10) gridItem.classList.add('item-10');
-
-      gridContainer.appendChild(gridItem);
-    }
-  </script>
 </body>
 </html>
+
 
 
